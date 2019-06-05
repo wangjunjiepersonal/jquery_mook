@@ -1,0 +1,104 @@
+
+body{
+	background-color: rgba(0,0,0,0.1);
+	color: #Fff;
+	cursor:pointer;
+	height: 100%;
+}
+h1{
+	text-align: center;
+}
+input[type=text],input[type=date]{
+	width: 100%;
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	border:0;
+	box-sizing: border-box;
+	
+}
+button{
+	display: inline-block;
+	border:0;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px 0; 
+	width: 100px;
+	cursor:pointer;
+	transition: background-color .5s;
+	transition: color .2s;
+}
+button:hover{
+	background-color: #7CCD7C;
+	color: #fff;
+}
+.container{
+	max-width: 900px;
+	margin: 80px auto;
+	cursor:pointer;
+	background-color: #00334b;
+	padding: 30px;
+	position: relative;
+	padding: 20px;
+}
+ 
+.task_list{
+	margin: 5px 0;
+}
+.task_item{
+	padding: 10px;
+	background-color: #fff;
+	color: #333;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+	transition: background .1.5s;
+	display: flex;
+	
+}
+.task_item .task_content{
+	flex: 1;
+}
+.task_item span{
+	padding: 0 10px;
+}
+
+.task_item:hover{
+	background-color: #ccc;
+}
+.task_detail,.task_detail_mask{
+	position: absolute;
+}
+.task_detail{
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	z-index: 9;
+	width: 50%;
+	height: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: none;
+}
+.content {
+	color: #000;
+	padding: 10px;
+}
+.task_detail textarea {
+	border-radius: 5px;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	height: 100px;
+}
+.task_detail_mask{
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8);
+}
